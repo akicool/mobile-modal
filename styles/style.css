@@ -1,11 +1,12 @@
 html, body {
   font-family: "Roboto";
   box-sizing: border-box;
-  width: 100%;
+  width: 100% !important;
+  margin: 0 auto !important;
 }
 
 .container {
-  min-width: 400px;
+  max-width: 400px;
   margin: 0 auto;
   padding-top: 20vh;
 }
