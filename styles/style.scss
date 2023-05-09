@@ -1,0 +1,113 @@
+html, body {
+    font-family: "Roboto";
+    box-sizing: border-box;
+    width: 100%;
+}
+
+
+.container {
+    min-width: 400px;
+    margin: 0 auto;
+    padding-top: 20vh; //del
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 27px 0;
+    &__text {
+        font-size: 18px;
+    }
+}
+
+.input-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0 16px 16px;
+
+    &__email {
+        width: 90%;
+        max-width: 450px;
+        padding: 16px;
+
+        border: 1px solid #d1d7e8;
+        border-radius: 8px;
+
+        font-size: 14px;
+    }
+
+    &__button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        width: 90%;
+        max-width: 450px;
+        height: 48px;
+        margin-top: 16px;
+        padding: 0 16px;
+        
+        border-radius: 50px;
+        background-color: #ABC232;
+
+        text-decoration: none;
+    }
+
+    &__button--text {
+        color: #fff;
+    }
+
+    &__mid-text {
+        margin: 24px 0;
+        font-size: 15px;
+    }
+
+    &__social {
+        display: flex;
+        justify-content: space-between;
+
+        width: 100%;
+        max-width: 460px;
+        grid-gap: 16px;
+    }
+
+    &__social--btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 56px;
+        //padding: 15px 40px;
+        border: 1px solid #d1d7e8;
+        border-radius: 15px;
+
+        width: 90%;
+
+        .svg-logo {
+            width: 25px;
+            height: 25px;
+        }
+    }
+    
+    &__by-phone {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        width: 90%;
+        height: 48px;
+        max-width: 450px;
+        margin-top: 16px;
+        padding: 0px 24px;
+
+        text-decoration: none;
+        color: #121212;
+
+        border: 1px solid #d1d7e8;
+        border-radius: 50px;
+    }
+}
