@@ -9,24 +9,24 @@ html, body {
   padding-top: 20vh;
 }
 
-.header {
+.login {
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 27px 0;
 }
-.header__text {
+.login__text {
   font-size: 18px;
 }
 
-.input-body {
+.field {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   padding: 0 16px 16px;
 }
-.input-body__email {
+.field .input-email {
   width: 90%;
   max-width: 450px;
   padding: 16px;
@@ -34,7 +34,7 @@ html, body {
   border-radius: 8px;
   font-size: 14px;
 }
-.input-body__button {
+.field__button {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -47,34 +47,17 @@ html, body {
   background-color: #ABC232;
   text-decoration: none;
 }
-.input-body__button--text {
+.field__button:hover {
+  background: #9AAE2D;
+}
+.field__button--text {
   color: #fff;
 }
-.input-body__mid-text {
+.field__mid-text {
   margin: 24px 0;
   font-size: 15px;
 }
-.input-body__social {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  max-width: 460px;
-  grid-gap: 16px;
-}
-.input-body__social--btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 56px;
-  border: 1px solid #d1d7e8;
-  border-radius: 15px;
-  width: 90%;
-}
-.input-body__social--btn .svg-logo {
-  width: 25px;
-  height: 25px;
-}
-.input-body__by-phone {
+.field__by-phone {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -87,6 +70,46 @@ html, body {
   color: #121212;
   border: 1px solid #d1d7e8;
   border-radius: 50px;
+}
+.field__by-phone:hover {
+  border: 1px solid #121212;
+}
+
+.by-phone--email {
+  display: none;
+}
+
+.input--tel {
+  display: none;
+}
+
+.button--tel {
+  display: none;
+}
+
+.social {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 460px;
+  grid-gap: 16px;
+}
+.social__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 56px;
+  background-color: #fff;
+  border: 1px solid #d1d7e8;
+  border-radius: 15px;
+  width: 90%;
+}
+.social__btn .logo {
+  width: 25px;
+  height: 25px;
+}
+.social__btn:hover {
+  border: 1px solid #121212;
 }
 
 /*# sourceMappingURL=style.css.map */

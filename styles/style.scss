@@ -10,7 +10,7 @@ html, body {
     padding-top: 20vh; //del
 }
 
-.header {
+.login {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -21,7 +21,7 @@ html, body {
     }
 }
 
-.input-body {
+.field {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -29,7 +29,7 @@ html, body {
 
     padding: 0 16px 16px;
 
-    &__email {
+    .input-email {
         width: 90%;
         max-width: 450px;
         padding: 16px;
@@ -56,6 +56,10 @@ html, body {
 
         text-decoration: none;
     }
+    
+    &__button:hover {
+        background: #9AAE2D;
+    }
 
     &__button--text {
         color: #fff;
@@ -64,32 +68,6 @@ html, body {
     &__mid-text {
         margin: 24px 0;
         font-size: 15px;
-    }
-
-    &__social {
-        display: flex;
-        justify-content: space-between;
-
-        width: 100%;
-        max-width: 460px;
-        grid-gap: 16px;
-    }
-
-    &__social--btn {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 56px;
-        //padding: 15px 40px;
-        border: 1px solid #d1d7e8;
-        border-radius: 15px;
-
-        width: 90%;
-
-        .svg-logo {
-            width: 25px;
-            height: 25px;
-        }
     }
     
     &__by-phone {
@@ -108,5 +86,57 @@ html, body {
 
         border: 1px solid #d1d7e8;
         border-radius: 50px;
+    }
+
+    &__by-phone:hover {
+        border: 1px solid #121212;
+    }
+}
+
+
+// display none on mobile 
+.by-phone--email {
+    display: none;
+}
+
+.input--tel {
+    display: none;
+}
+
+.button--tel {
+    display: none;
+}
+
+
+
+.social {
+    display: flex;
+    justify-content: space-between;
+
+    width: 100%;
+    max-width: 460px;
+    grid-gap: 16px;
+
+    &__btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 56px;
+        //padding: 15px 40px;
+
+        background-color: #fff;
+        border: 1px solid #d1d7e8;
+        border-radius: 15px;
+    
+        width: 90%;
+    
+        .logo {
+            width: 25px;
+            height: 25px;
+        }
+    }
+
+    &__btn:hover {
+        border: 1px solid #121212;
     }
 }

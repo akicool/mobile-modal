@@ -1,34 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="styles/normalize.css" />
-    <link rel="stylesheet" href="styles/style.css" />
-  </head>
-  <body>
-    <div class="container">
-      <header class="header">
-        <div class="header__text">Вход или регистрация</div>
-      </header>
-      <div class="input-body">
-        <input class="input-body__email" type="text" placeholder="E-mail">
-        <a href="#" class="input-body__button">
-            <span class="input-body__button--text">Продолжить через email</span>
-        </a>
-        <span class="input-body__mid-text">Или</span>
-        <div class="input-body__social">
-            <a href="#" class="input-body__social--btn"><img class="svg-logo" src="img/apple.svg" alt=""></a>
-            <a href="#" class="input-body__social--btn"><img class="svg-logo" src="img/vk.svg" alt=""></a>
-            <a href="#" class="input-body__social--btn"><img class="svg-logo" src="img/google.svg" alt=""></a>
-        </div>
-        <a href="#" class="input-body__by-phone">Войти по телефону</a>
+
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="styles/normalize.css" />
+  <link rel="stylesheet" href="styles/style.css" />
+</head>
+
+<body>
+  <div class="container">
+    <header class="login">
+      <div class="login__text">Вход или регистрация</div>
+    </header>
+    <div class="field">
+      <input class="input-email" autocomplete="email" type="text" placeholder="E-mail">
+      <input class="input-email input--tel" autocomplete="tel" maxlength="16" placeholder="+7">
+      <a href="#" class="field__button">
+        <span class="field__button--text">Продолжить через email</span>
+      </a>
+      <a href="#" class="field__button button--tel">
+        <span class="field__button--text">Продолжить через телефон</span>
+      </a>
+      <span class="field__mid-text">Или</span>
+      <div class="social">
+        <button href="#" class="social__btn">
+          <a href="https://www.apple.com/">
+            <img class="logo" src="img/apple.svg" alt="">
+          </a>
+        </button>
+        <button href="#" class="social__btn">
+          <a href="https://vk.com/feed">
+            <img class="logo" src="img/vk.svg" alt="">
+          </a>
+        </button>
+        <button href="#" class="social__btn">
+          <a href="https://www.google.com/">
+            <img class="logo" src="img/google.svg" alt="">
+          </a>
+        </button>
       </div>
+      <a href="#" class="field__by-phone">Войти по телефону</a>
+      <a href="#" class="field__by-phone by-phone--email">Войти по email</a>
     </div>
-  </body>
+  </div>
+  <script src="script.js"></script>
+</body>
+
 </html>
