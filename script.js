@@ -1,8 +1,8 @@
 const fieldByPhone = document.querySelector('.field__by-phone');
 const fieldEmail = document.querySelector('.by-phone--email');
 
-const inputEmail = document.querySelector('.input-email');
-const inputTel = document.querySelector('.input--tel');
+const inputEmail = document.querySelector('.field__email');
+const inputTel = document.querySelector('.field__tel');
 
 const buttonTel = document.querySelector('.button--tel');
 const fieldButton = document.querySelector('.field__button');
@@ -29,28 +29,4 @@ fieldEmail.addEventListener('click', event => {
     fieldButton.style.display = 'flex';
 });
 
-
-
-
-
-
-
-//fieldByPhone.addEventListener('click', event => {
-//    fieldByPhone.innerHTML = 'Войти по email';
-//});
-
-
-
-//let isFieldByPhone = true;
-//
-//fieldByPhone.addEventListener("click", event => {
-//    if (isFieldByPhone) {
-//        fieldByPhone.innerHTML = 'Войти по email';
-//        isFieldByPhone = false;
-//    }
-//    else {
-//        fieldByPhone.innerHTML = 'Войти по телефону';
-//        isFieldByPhone = true;
-//    }
-//});
 

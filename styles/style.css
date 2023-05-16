@@ -4,7 +4,7 @@ html, body {
 }
 
 .container {
-  max-width: 400px;
+  max-width: 768px;
   margin: 0 auto;
   padding-top: 20vh;
 }
@@ -26,9 +26,8 @@ html, body {
   justify-content: center;
   padding: 0 16px 16px;
 }
-.field .input-email {
+.field__email {
   width: 90%;
-  max-width: 450px;
   padding: 16px;
   border: 1px solid #d1d7e8;
   border-radius: 8px;
@@ -39,7 +38,6 @@ html, body {
   justify-content: center;
   align-items: center;
   width: 90%;
-  max-width: 450px;
   height: 48px;
   margin-top: 16px;
   padding: 0 16px;
@@ -63,7 +61,6 @@ html, body {
   justify-content: center;
   width: 90%;
   height: 48px;
-  max-width: 450px;
   margin-top: 16px;
   padding: 0px 24px;
   text-decoration: none;
@@ -79,7 +76,7 @@ html, body {
   display: none;
 }
 
-.input--tel {
+.field__tel {
   display: none;
 }
 
@@ -91,7 +88,6 @@ html, body {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  max-width: 460px;
   grid-gap: 16px;
 }
 .social__btn {
