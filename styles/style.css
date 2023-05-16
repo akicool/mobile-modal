@@ -32,6 +32,17 @@ html, body {
   border: 1px solid #d1d7e8;
   border-radius: 8px;
   font-size: 14px;
+  outline: none;
+}
+.field__empty {
+  width: 94%;
+  margin-top: 6px;
+  font-size: 12px;
+  float: left;
+  color: #F84564;
+}
+.field__empty {
+  display: none;
 }
 .field__button {
   display: flex;
