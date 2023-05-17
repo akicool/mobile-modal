@@ -9,13 +9,11 @@ html, body {
   padding-top: 20vh;
 }
 
-.login {
+.form__header-text {
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 27px 0;
-}
-.login__text {
   font-size: 18px;
 }
 
@@ -27,28 +25,28 @@ html, body {
   padding: 0 16px 16px;
 }
 .field__email {
-  width: 90%;
+  width: 94%;
   padding: 16px;
   border: 1px solid #d1d7e8;
   border-radius: 8px;
   font-size: 14px;
   outline: none;
 }
-.field__empty {
+.field__empty-email {
   width: 94%;
   margin-top: 6px;
   font-size: 12px;
   float: left;
   color: #F84564;
 }
-.field__empty {
+.field__empty-email {
   display: none;
 }
 .field__button {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 90%;
+  width: 95%;
   height: 48px;
   margin-top: 16px;
   padding: 0 16px;
@@ -66,11 +64,12 @@ html, body {
   margin: 24px 0;
   font-size: 15px;
 }
-.field__by-phone {
+
+.btn__by-phone {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 90%;
+  width: 94%;
   height: 48px;
   margin-top: 16px;
   padding: 0px 24px;
@@ -79,7 +78,8 @@ html, body {
   border: 1px solid #d1d7e8;
   border-radius: 50px;
 }
-.field__by-phone:hover {
+
+.btn__by-phone:hover {
   border: 1px solid #121212;
 }
 
@@ -87,7 +87,7 @@ html, body {
   display: none;
 }
 
-.field__tel {
+.field-tel {
   display: none;
 }
 
@@ -95,13 +95,13 @@ html, body {
   display: none;
 }
 
-.social {
+.btn-wrap {
   display: flex;
   justify-content: space-between;
   width: 100%;
   grid-gap: 16px;
 }
-.social__btn {
+.btn-wrap__item {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -111,11 +111,11 @@ html, body {
   border-radius: 15px;
   width: 90%;
 }
-.social__btn .logo {
+.btn-wrap__item .btn-icon {
   width: 25px;
   height: 25px;
 }
-.social__btn:hover {
+.btn-wrap__item:hover {
   border: 1px solid #121212;
 }
 

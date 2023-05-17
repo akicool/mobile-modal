@@ -1,14 +1,13 @@
-const fieldByPhone = document.querySelector('.field__by-phone');
+const fieldByPhone = document.querySelector('.btn__by-phone');
 const fieldByPhoneEmail = document.querySelector('.by-phone--email');
 
 const fieldEmail = document.querySelector('.field__email');
-const fieldTel = document.querySelector('.field__tel');
+const fieldTel = document.querySelector('.field-tel');
 
 const buttonTel = document.querySelector('.button--tel');
 const fieldButton = document.querySelector('.field__button');    
 
-const fieldEmpty = document.querySelector('.field__empty');
-
+const fieldEmpty = document.querySelector('.field__empty-email');
 
 fieldByPhone.addEventListener('click', event => {
     fieldByPhone.style.display = 'none';
@@ -19,6 +18,9 @@ fieldByPhone.addEventListener('click', event => {
 
     buttonTel.style.display = 'flex';
     fieldButton.style.display = 'none';
+
+    fieldEmpty.style.display = 'none';
+    fieldEmail.style.border = '1px solid #d1d7e8';
 });
 
 fieldByPhoneEmail.addEventListener('click', event => {

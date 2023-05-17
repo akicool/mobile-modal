@@ -10,15 +10,13 @@ html, body {
     padding-top: 20vh; //del
 }
 
-.login {
+.form__header-text {
     display: flex;
     align-items: center;
     justify-content: center;
 
     padding: 27px 0;
-    &__text {
-        font-size: 18px;
-    }
+    font-size: 18px;
 }
 
 .field {
@@ -30,7 +28,7 @@ html, body {
     padding: 0 16px 16px;
 
     &__email {
-        width: 90%;
+        width: 94%;
         //max-width: 450px;
         padding: 16px;
 
@@ -42,7 +40,7 @@ html, body {
         outline: none;
     }
 
-    &__empty {
+    &__empty-email {
         width: 94%;
         margin-top: 6px;
         font-size: 12px;
@@ -51,7 +49,7 @@ html, body {
         color: #F84564;
     }
 
-    &__empty {
+    &__empty-email {
         display: none;
     }
 
@@ -60,7 +58,7 @@ html, body {
         justify-content: center;
         align-items: center;
         
-        width: 90%;
+        width: 95%;
         //max-width: 450px;
         height: 48px;
         margin-top: 16px;
@@ -85,36 +83,36 @@ html, body {
         font-size: 15px;
     }
     
-    &__by-phone {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-        width: 90%;
-        height: 48px;
-        //max-width: 450px;
-        margin-top: 16px;
-        padding: 0px 24px;
-
-        text-decoration: none;
-        color: #121212;
-
-        border: 1px solid #d1d7e8;
-        border-radius: 50px;
-    }
-
-    &__by-phone:hover {
-        border: 1px solid #121212;
-    }
 }
 
+.btn__by-phone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 94%;
+    height: 48px;
+    //max-width: 450px;
+    margin-top: 16px;
+    padding: 0px 24px;
+
+    text-decoration: none;
+    color: #121212;
+
+    border: 1px solid #d1d7e8;
+    border-radius: 50px;
+}
+
+.btn__by-phone:hover {
+    border: 1px solid #121212;
+}
 
 // display none on mobile 
 .by-phone--email {
     display: none;
 }
 
-.field__tel {
+.field-tel {
     display: none;
 }
 
@@ -122,7 +120,7 @@ html, body {
     display: none;
 }
 
-.social {
+.btn-wrap {
     display: flex;
     justify-content: space-between;
 
@@ -130,7 +128,7 @@ html, body {
     //max-width: 460px;
     grid-gap: 16px;
 
-    &__btn {
+    &__item {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -143,13 +141,13 @@ html, body {
     
         width: 90%;
     
-        .logo {
+        .btn-icon {
             width: 25px;
             height: 25px;
         }
     }
 
-    &__btn:hover {
+    &__item:hover {
         border: 1px solid #121212;
     }
 }
