@@ -17,11 +17,41 @@ html, body {
   font-size: 18px;
 }
 
-.field {
+.form {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding: 0 16px 16px;
+}
+.form__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 95%;
+  height: 48px;
+  margin-top: 16px;
+  padding: 0 16px;
+  border-radius: 50px;
+  background-color: #ABC232;
+  text-decoration: none;
+}
+.form__button:hover {
+  background: #9AAE2D;
+}
+.form__button--text {
+  color: #fff;
+}
+.form__mid-text {
+  margin: 24px 0;
+  font-size: 15px;
+}
+
+.field {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
   padding: 0 16px 16px;
 }
 .field__email {
@@ -41,32 +71,6 @@ html, body {
 }
 .field__empty-email {
   display: none;
-}
-
-.form__button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 95%;
-  height: 48px;
-  margin-top: 16px;
-  padding: 0 16px;
-  border-radius: 50px;
-  background-color: #ABC232;
-  text-decoration: none;
-}
-
-.form__button:hover {
-  background: #9AAE2D;
-}
-
-.form__button--text {
-  color: #fff;
-}
-
-.form__mid-text {
-  margin: 24px 0;
-  font-size: 15px;
 }
 
 .btn__by-phone {
