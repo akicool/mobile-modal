@@ -42,7 +42,8 @@ html, body {
 .field__empty-email {
   display: none;
 }
-.field__button {
+
+.form__button {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -54,13 +55,16 @@ html, body {
   background-color: #ABC232;
   text-decoration: none;
 }
-.field__button:hover {
+
+.form__button:hover {
   background: #9AAE2D;
 }
-.field__button--text {
+
+.form__button--text {
   color: #fff;
 }
-.field__mid-text {
+
+.form__mid-text {
   margin: 24px 0;
   font-size: 15px;
 }
@@ -83,7 +87,7 @@ html, body {
   border: 1px solid #121212;
 }
 
-.by-phone--email {
+.btn__by-phone--email {
   display: none;
 }
 

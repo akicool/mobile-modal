@@ -52,37 +52,36 @@ html, body {
     &__empty-email {
         display: none;
     }
+}
 
-    &__button {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        
-        width: 95%;
-        //max-width: 450px;
-        height: 48px;
-        margin-top: 16px;
-        padding: 0 16px;
-        
-        border-radius: 50px;
-        background-color: #ABC232;
-
-        text-decoration: none;
-    }
+.form__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     
-    &__button:hover {
-        background: #9AAE2D;
-    }
-
-    &__button--text {
-        color: #fff;
-    }
-
-    &__mid-text {
-        margin: 24px 0;
-        font-size: 15px;
-    }
+    width: 95%;
+    //max-width: 450px;
+    height: 48px;
+    margin-top: 16px;
+    padding: 0 16px;
     
+    border-radius: 50px;
+    background-color: #ABC232;
+
+    text-decoration: none;
+}
+
+.form__button:hover {
+    background: #9AAE2D;
+}
+
+.form__button--text {
+    color: #fff;
+}
+
+.form__mid-text {
+    margin: 24px 0;
+    font-size: 15px;
 }
 
 .btn__by-phone {
@@ -108,7 +107,7 @@ html, body {
 }
 
 // display none on mobile 
-.by-phone--email {
+.btn__by-phone--email {
     display: none;
 }
 
