@@ -3,20 +3,10 @@ html, body {
     box-sizing: border-box;
 }
 
-
 .container {
     max-width: 768px;
     margin: 0 auto;
     padding-top: 20vh; //del
-}
-
-.form__header-text {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    padding: 27px 0;
-    font-size: 18px;
 }
 
 .form {
@@ -27,29 +17,67 @@ html, body {
 
     padding: 0 16px 16px;
 
-    &__button {
+    &__header-text {
         display: flex;
-        justify-content: center;
         align-items: center;
+        justify-content: center;
+    
+        padding: 27px 0;
+        font-size: 18px;
+    }
+
+    &__btn-wrap {
+        display: flex;
+        justify-content: space-between;
+    
+        width: 100%;
+        //max-width: 460px;
+        grid-gap: 16px;
+    
+        .btn--icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 56px;
+            //padding: 15px 40px;
+    
+            background-color: #fff;
+            border: 1px solid #d1d7e8;
+            border-radius: 15px;
         
-        width: 95%;
-        //max-width: 450px;
+            width: 90%;
+        
+            .btn-icon {
+                width: 25px;
+                height: 25px;
+            }
+        }
+    
+        .btn--icon:hover {
+            border: 1px solid #121212;
+        }
+    }
+    
+    &__login-method {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+        width: 94%;
         height: 48px;
+        //max-width: 450px;
         margin-top: 16px;
-        padding: 0 16px;
-        
-        border-radius: 50px;
-        background-color: #ABC232;
+        padding: 0px 24px;
     
         text-decoration: none;
+        color: #121212;
+    
+        border: 1px solid #d1d7e8;
+        border-radius: 50px;
     }
     
-    &__button:hover {
-        background: #9AAE2D;
-    }
-    
-    &__button--text {
-        color: #fff;
+    &__login-method:hover {
+        border: 1px solid #121212;
     }
     
     &__mid-text {
@@ -62,12 +90,13 @@ html, body {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 
     width: 100%;
 
     padding: 0 16px 16px;
 
-    &__email {
+    &__input {
         width: 94%;
         //max-width: 450px;
         padding: 16px;
@@ -80,7 +109,7 @@ html, body {
         outline: none;
     }
 
-    &__empty-email {
+    &__error-text {
         width: 94%;
         margin-top: 6px;
         font-size: 12px;
@@ -89,75 +118,45 @@ html, body {
         color: #F84564;
     }
 
-    &__empty-email {
+    &__error-text {
         display: none;
     }
 }
 
-
-.btn__by-phone {
+.btn--accent {
     display: flex;
-    align-items: center;
     justify-content: center;
-
-    width: 90%;
-    height: 48px;
+    align-items: center;
+    
+    width: 100%;
     //max-width: 450px;
+    height: 48px;
     margin-top: 16px;
-    padding: 0px 24px;
+    padding: 0 16px;
+    
+    border-radius: 50px;
+    border: none;
+
+    background-color: #ABC232;
+    color: #fff;
 
     text-decoration: none;
-    color: #121212;
 
-    border: 1px solid #d1d7e8;
-    border-radius: 50px;
-}
-
-.btn__by-phone:hover {
-    border: 1px solid #121212;
+    &:hover {
+        background: #9AAE2D;
+    }
 }
 
 // display none on mobile 
-.btn__by-phone--email {
+#login-method-by-email{
     display: none;
 }
 
-.field-tel {
+.field--hidden {
     display: none;
 }
 
-.button--tel {
+#login-tel {
     display: none;
 }
 
-.btn-wrap {
-    display: flex;
-    justify-content: space-between;
-
-    width: 100%;
-    //max-width: 460px;
-    grid-gap: 16px;
-
-    &__item {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 56px;
-        //padding: 15px 40px;
-
-        background-color: #fff;
-        border: 1px solid #d1d7e8;
-        border-radius: 15px;
-    
-        width: 90%;
-    
-        .btn-icon {
-            width: 25px;
-            height: 25px;
-        }
-    }
-
-    &__item:hover {
-        border: 1px solid #121212;
-    }
-}
