@@ -47,6 +47,7 @@ html, body {
         
             width: 90%;
         
+            cursor: pointer;
             .btn-icon {
                 width: 25px;
                 height: 25px;
@@ -63,17 +64,18 @@ html, body {
         align-items: center;
         justify-content: center;
     
-        width: 94%;
+        width: 98%;
         height: 48px;
         //max-width: 450px;
         margin-top: 16px;
-        padding: 0px 24px;
+        padding: 0px 10px;
     
         text-decoration: none;
         color: #121212;
     
         border: 1px solid #d1d7e8;
         border-radius: 50px;
+        cursor: pointer;
     }
     
     &__login-method:hover {
@@ -142,6 +144,7 @@ html, body {
 
     text-decoration: none;
 
+    cursor: pointer;
     &:hover {
         background: #9AAE2D;
     }

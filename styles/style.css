@@ -38,6 +38,7 @@ html, body {
   border: 1px solid #d1d7e8;
   border-radius: 15px;
   width: 90%;
+  cursor: pointer;
 }
 .form__btn-wrap .btn--icon .btn-icon {
   width: 25px;
@@ -50,14 +51,15 @@ html, body {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 94%;
+  width: 98%;
   height: 48px;
   margin-top: 16px;
-  padding: 0px 24px;
+  padding: 0px 10px;
   text-decoration: none;
   color: #121212;
   border: 1px solid #d1d7e8;
   border-radius: 50px;
+  cursor: pointer;
 }
 .form__login-method:hover {
   border: 1px solid #121212;
@@ -107,6 +109,7 @@ html, body {
   background-color: #ABC232;
   color: #fff;
   text-decoration: none;
+  cursor: pointer;
 }
 .btn--accent:hover {
   background: #9AAE2D;
