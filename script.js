@@ -39,35 +39,42 @@ methodEmail.addEventListener('click', event => {
     fieldPhone.style.display = 'none';
 });
 
+//Email valid
+const EMAIL_REGEXP = /^(([^<>()[\].,;:\s@"]+(\.[^<>()[\].,;:\s@"]+)*)|(".+"))@(([^<>()[\].,;:\s@"]+\.)+[^<>()[\].,;:\s@"]{2,})$/iu;
 
-const validateEmail = (email) => {
-  return String(email)
-    .toLowerCase()
-    .match(
-      /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|.(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
-    );
-};
-
-loginEmail.addEventListener('click', e => {
-    if (errorEmail.value == '' || errorEmail.value === ' ') {
+function onInputEmail() {
+    if (isEmailValid(errorEmail.value)) {
+        errorEmail.style.borderColor = 'green';
+        errorEmailText.style.display = 'none';
+    } else {
         errorEmail.style.border = '1px solid red';
         errorEmailText.style.display = 'block';
         field.style.paddingBottom = '3px';
-    } else if (validateEmail) {
-        errorEmail.style.border = '1px solid green';
-        errorEmailText.style.display = 'none';
-    } 
-});
+    }
+}
 
-loginTel.addEventListener('click', e => {
-    if (errorTel.value == '' || errorTel.value === ' ') {
+loginEmail.addEventListener('click', onInputEmail);
+
+function isEmailValid(value) {
+    return EMAIL_REGEXP.test(value);
+}
+
+//Tel valid
+const TEL_REGEXP = /(?:\+|\d)[\d\-\(\) ]{9,}\d/g
+
+function onInputTel() {
+    if (isTelValid(errorTel.value)) {
+        errorTel.style.borderColor = 'green';
+        errorTelText.style.display = 'none';
+    } else {
         errorTel.style.border = '1px solid red';
         errorTelText.style.display = 'block';
         field.style.paddingBottom = '3px';
-    } else if (validateEmail) {
-        errorTel.style.border = '1px solid green';
-        errorTelText.style.display = 'none';
-    } 
-});
-
-
+}
+}
+  
+loginTel.addEventListener('click', onInputTel);
+  
+function isTelValid(value) {
+    return TEL_REGEXP.test(value);
+}
