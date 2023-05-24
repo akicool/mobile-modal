@@ -68,7 +68,7 @@ function onInputTel() {
     if (isTelValid(errorTel.value)) {
         errorTel.style.borderColor = 'green';
         errorTelText.style.display = 'none';
-    } else {
+    } else if (!isTelValid(errorTel.value)){
         errorTel.style.border = '1px solid red';
         errorTelText.style.display = 'block';
         field.style.paddingBottom = '3px';
@@ -106,13 +106,22 @@ const regErrorTelText = document.getElementById('reg-error-tel-text');
 const loginField = document.getElementById('login-field');
 
 
+const container = document.querySelector('.container');
 
 loginEmail.addEventListener('click', e => {
     if (isEmailValid(errorEmail.value)) {
         form.style.display = 'none';
         registField.style.display = 'flex';
+        container.style.paddingTop = '7vh';
     }
 });
+
+//loginTel.addEventListener('click', e => {
+//    if (isTelValid(errorTel.value)) {
+//        form.style.display = 'none';
+//        registField.style.display = 'flex';
+//    }
+//});
 
 organizerBtn.addEventListener('click', e => {
     organizerBtn.style.backgroundColor = '#FFFFFF';
