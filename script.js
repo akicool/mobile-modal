@@ -75,7 +75,7 @@ function onInputTel() {
     }
 }
   
-loginTel.addEventListener('click', onInputTel);
+loginTel.addEventListener('click', onInputTel, inRegistOnTel());
   
 function isTelValid(value) {
     return TEL_REGEXP.test(value);
@@ -116,12 +116,15 @@ loginEmail.addEventListener('click', e => {
     }
 });
 
-//loginTel.addEventListener('click', e => {
-//    if (isTelValid(errorTel.value)) {
-//        form.style.display = 'none';
-//        registField.style.display = 'flex';
-//    }
-//});
+function inRegistOnTel() {
+    loginTel.addEventListener('click', e => {
+        if (isTelValid(errorTel.value)) {
+            form.style.display = 'none';
+            registField.style.display = 'flex';
+            container.style.paddingTop = '7vh';
+        }
+    });
+}
 
 organizerBtn.addEventListener('click', e => {
     organizerBtn.style.backgroundColor = '#FFFFFF';
