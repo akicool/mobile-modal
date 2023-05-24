@@ -163,3 +163,149 @@ html, body {
     display: none;
 }
 
+
+//regist-form
+#regist-none {
+    display: none;
+}
+
+.regist-field {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0 16px 16px;
+
+    &__header-text {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+        padding: 27px 0;
+        font-size: 18px;
+    }
+
+    &__switcher {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        padding: 4px;
+        margin-bottom: 20px;
+        grid-gap: 4px;
+
+        background: #EEEEF2;
+        border-radius: 12px;
+    }
+
+    #traveler {
+        background-color: #FFFFFF;
+    }
+
+    &__item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        height: 40px;
+        width: 100%;
+        border-radius: 8px;
+
+        font-weight: 500;
+        line-height: 18px;
+        
+        color: #121212;
+        cursor: pointer;
+    }
+
+    &__btn-wrap {
+        display: flex;
+        justify-content: space-between;
+    
+        width: 100%;
+        //max-width: 460px;
+        grid-gap: 16px;
+    
+        .btn--icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 56px;
+            //padding: 15px 40px;
+    
+            background-color: #fff;
+            border: 1px solid #d1d7e8;
+            border-radius: 15px;
+        
+            width: 90%;
+        
+            cursor: pointer;
+            .btn-icon {
+                width: 25px;
+                height: 25px;
+            }
+        }
+    
+        .btn--icon:hover {
+            border: 1px solid #121212;
+        }
+    }
+    
+    &__mid-text {
+        margin: 24px 0;
+        font-size: 15px;
+    }
+
+    &__email {
+        display: flex;
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    &__phone {
+        display: flex;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    &__password {
+        display: flex;
+        width: 100%;
+        margin-top: 10px;
+    }
+}
+
+.initials {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+    
+    &__item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        padding-right: 16px;
+        padding-left: 16px;
+    }
+    
+    &__input {
+        width: 100%;
+        padding: 16px;
+        border: 1px solid #d1d7e8;
+    }
+
+    #name {
+        border-top-left-radius: 8px;
+        border-bottom-left-radius: 8px;
+        border-right-width: .5px;
+    }
+
+    #surname {
+        border-top-right-radius: 8px;
+        border-bottom-right-radius: 8px;
+        border-right-width: .5px;
+    }
+}

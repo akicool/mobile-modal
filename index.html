@@ -43,6 +43,48 @@
         <span id="login-method-by-tel" class="form__login-method">Войти по телефону</span>
         <span id="login-method-by-email" class="form__login-method">Войти по email</span>
       </form>
+      <form class="regist-field" id="regist-none">
+        <div class="regist-field__header-text">Регистрация</div>
+        <div class="regist-field__switcher">
+          <div id="traveler" class="regist-field__item">Я путешественник</div>
+          <div id="organizer" class="regist-field__item">Я организатор</div>
+        </div>
+        <div class="regist-field__btn-wrap">
+          <button class="btn btn--icon" type="button">
+            <img class="btn-icon" src="img/apple.svg" alt="">
+          </button>
+          <button class="btn btn--icon" type="button">
+            <img class="btn-icon" src="img/vk.svg" alt="">
+          </button>
+          <button class="btn btn--icon" type="button">
+            <img class="btn-icon" src="img/google.svg" alt="">
+          </button>
+        </div>
+        <span class="regist-field__mid-text">Или</span>
+        <div class="initials">
+          <div class="initials__item">
+            <input id="name" type="text" class="initials__input" placeholder="Имя">
+            <span id="reg-error-name-text" class="field__error-text">Заполните поле</span>
+          </div>
+          <div class="initials__item">
+            <input id="surname" type="text" class="initials__input" placeholder="Фамилия">
+            <span id="reg-error-surname-text" class="field__error-text">Заполните поле</span>
+          </div>
+        </div>
+        <div class="regist-field regist-field__email">
+          <input id="reg-error-email" class="field__input" autocomplete="E-mail" type="text" placeholder="E-mail">
+          <span id="reg-error-email-text" class="field__error-text">Введен неправильный email</span>
+        </div>
+        <div class="regist-field regist-field__phone">
+          <input id="reg-error-tel" class="field__input" autocomplete="tel" type="tel" maxlength="16" placeholder="+7">
+          <span id="reg-error-tel-text" class="field__error-text">Введен неверный номер телефона</span>
+        </div>
+        <div class="regist-field regist-field__password">
+          <input id="reg-error-password" class="field__input" autocomplete="new-password" type="password" placeholder="Пароль">
+          <span id="reg-error-password-text" class="field__error-text">Заполните поле</span>
+        </div>
+        <button id="login-field" class="btn btn--accent" type="button">Зарегестрироваться</button>
+      </form>
   </div>
   <script src="script.js"></script>
 </body>
