@@ -112,7 +112,7 @@ loginEmail.addEventListener('click', e => {
     if (isEmailValid(errorEmail.value)) {
         form.style.display = 'none';
         registField.style.display = 'flex';
-        container.style.paddingTop = '7vh';
+        container.style.paddingTop = '2vh';
     }
 });
 
@@ -121,7 +121,7 @@ function inRegistOnTel() {
         if (isTelValid(errorTel.value)) {
             form.style.display = 'none';
             registField.style.display = 'flex';
-            container.style.paddingTop = '7vh';
+            container.style.paddingTop = '2vh';
         }
     });
 }
